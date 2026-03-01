@@ -15,11 +15,36 @@
   --muted-foreground: #9ca3af;
   --border: #2a2f33;
 
+  /* spacings and border radius */
   --space-sm: 0.5rem;
   --space-md: 1rem;
   --space-lg: 1.5rem;
   --space-xl: 2rem;
   --space-2xl: 4rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #f9fafb;
+    --foreground: #11181c;
+    --primary: #059669;
+    --primary-foreground: #022c22;
+    --card: #ffffff;
+    --glow-bg: #0596691a;
+    --muted: #e5e7eb;
+    --muted-foreground: #6b7280;
+    --border: #d1d5db;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-sm: 0.25rem;
+    --space-md: 1rem;
+    --space-lg: 1.25rem;
+    --space-xl: 1.5rem;
+    --space-2xl: 2rem;
+  }
 }
 
 body {
@@ -35,7 +60,7 @@ body {
 }
 
 .accordion-section {
-  padding: 40px;
+  padding: var(--space-2xl);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,6 +83,7 @@ body {
 .accordion-item {
   border: 1px solid var(--border);
   margin-top: -1px;
+  transition-duration: 300ms;
 }
 
 .accordion-item.open {
