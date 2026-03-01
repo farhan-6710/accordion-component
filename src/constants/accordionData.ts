@@ -1,4 +1,4 @@
-export const DUMMY_DATA = [
+export const DUMMY_FAQ_DATA = [
   {
     id: 1,
     title: "What is React?",

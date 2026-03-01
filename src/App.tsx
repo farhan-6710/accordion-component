@@ -1,4 +1,4 @@
-import { DUMMY_DATA } from "./constants/accordionData";
+import { DUMMY_FAQ_DATA } from "./constants/accordionData";
 import { AccordionComponent } from "./components/AccordionComponent";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         <h2 className="accordion-heading" id="accordion-heading">
           Accordion Section
         </h2>
-        <AccordionComponent data={DUMMY_DATA} multipleOpen={true} />
+        <AccordionComponent data={DUMMY_FAQ_DATA} multipleOpen={false} />
       </section>
     </main>
   );
