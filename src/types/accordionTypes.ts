@@ -6,4 +6,5 @@ interface AccordionItem {
 
 export interface AccordionProps {
   data: AccordionItem[];
+  multipleOpen?: boolean;
 }
