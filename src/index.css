@@ -93,6 +93,7 @@ body {
 
 .accordion-item.open .accordion-trigger svg {
   transform: rotate(0deg);
+  color: var(--primary);
 }
 
 .accordion-content {
