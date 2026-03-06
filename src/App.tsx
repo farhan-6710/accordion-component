@@ -11,7 +11,7 @@ function App() {
         <h2 className="accordion-heading" id="accordion-heading">
           Accordion Section
         </h2>
-        <AccordionComponent data={DUMMY_FAQ_DATA} multipleOpen={false} />
+        <AccordionComponent data={DUMMY_FAQ_DATA} multipleOpen={true} />
       </section>
     </main>
   );
