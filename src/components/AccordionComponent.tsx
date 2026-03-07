@@ -1,11 +1,11 @@
 import { useState } from "react";
-import type { AccordionProps } from "../types/accordionTypes";
+import type { AccordionComponentProps } from "../types/accordionTypes";
 import { AccordionTriggerIcon } from "./AccordionTriggerIcon";
 
 export const AccordionComponent = ({
   data,
   multipleOpen = true,
-}: AccordionProps) => {
+}: AccordionComponentProps) => {
   const [openId, setOpenId] = useState<number | null>(1);
   const [openIds, setOpenIds] = useState([1]);
 

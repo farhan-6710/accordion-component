@@ -4,7 +4,7 @@ interface AccordionItem {
   content: string;
 }
 
-export interface AccordionProps {
+export interface AccordionComponentProps {
   data: AccordionItem[];
   multipleOpen?: boolean;
 }
