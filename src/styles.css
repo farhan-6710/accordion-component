@@ -85,6 +85,11 @@ body {
   transition-duration: 300ms;
 }
 
+.accordion-item:hover {
+  background-color: var(--muted);
+  cursor: pointer;
+}
+
 .accordion-item.open {
   position: relative;
   z-index: 1;
