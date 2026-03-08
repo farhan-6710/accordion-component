@@ -15,7 +15,7 @@ function App() {
     return () => {
       document.removeEventListener("keydown", handleToggleTheme);
     };
-  });
+  }, []);
   return (
     <main className="main-content" role="main">
       <section
