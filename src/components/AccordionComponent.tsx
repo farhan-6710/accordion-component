@@ -27,7 +27,7 @@ export const AccordionComponent = ({
           : openId === item.id;
         return (
           <div key={item.id} className={`accordion-item ${isOpen && "open"}`}>
-            <div
+            <button
               className="accordion-trigger"
               onClick={() => {
                 handleAccordionTrigger(item.id);
@@ -36,7 +36,7 @@ export const AccordionComponent = ({
             >
               <h3>{item.title}</h3>
               <AccordionTriggerIcon />
-            </div>
+            </button>
             <div className="accordion-content">
               <div className="accordion-content-wrapper">
                 <p>{item.content}</p>
