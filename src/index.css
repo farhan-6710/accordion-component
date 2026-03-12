@@ -136,6 +136,7 @@ body {
   align-items: center;
   cursor: pointer;
   border: none;
+  font-size: 16px;
 }
 
 .accordion-item .accordion-trigger svg {
